@@ -1,0 +1,70 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.dev.izcax.hitungbensin.Fragment.Tab1Fragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Perkiraan Biaya"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:id="@+id/txtjdlmtr"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10sp"/>
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtjarakmotor"
+            android:hint="Jarak Tempuh"
+            app:met_floatingLabel="highlight"
+            app:met_textColorHint="@color/colorEdit"
+            android:inputType="numberDecimal"/>
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtwaktumotor"
+            android:hint="Waktu Tempuh"
+            app:met_floatingLabel="highlight"
+            app:met_textColorHint="@color/colorEdit"
+            android:inputType="numberDecimal"/>
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edthargamotor"
+            android:hint="Harga Bensin"
+            app:met_floatingLabel="highlight"
+            app:met_textColorHint="@color/colorEdit"
+            android:inputType="numberDecimal"/>
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinermotor">
+        </Spinner>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtjenis"
+            android:visibility="gone"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hitung"
+            android:id="@+id/btnhitungmotor"
+            android:background="@color/colorPrimary"
+            android:onClick="motor"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:id="@+id/txtHslmotor"/>
+    </LinearLayout>
+
+
+</ScrollView>
